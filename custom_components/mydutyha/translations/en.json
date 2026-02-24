@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a MyDuty person",
+        "description": "Configure a person for MyDuty sync.",
+        "data": {
+          "name": "Name",
+          "share_id": "Share ID"
+        }
+      }
+    },
+    "error": {
+      "invalid_share_id": "Invalid share ID.",
+      "invalid_user_id": "Invalid share ID."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sync Times",
+        "description": "Configure up to 3 daily sync times (HH:MM format).",
+        "data": {
+          "sync_time_1": "First sync time (HH:MM)",
+          "sync_time_2": "Second sync time (HH:MM)",
+          "sync_time_3": "Third sync time (HH:MM)"
+        }
+      }
+    },
+    "error": {
+      "invalid_format": "Invalid format. Use HH:MM (e.g., 09:30)",
+      "at_least_one_time": "Please enter at least one sync time"
+    }
+  }
+}

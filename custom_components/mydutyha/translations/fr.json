@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ajouter une personne MyDuty",
+        "description": "Configurez une personne pour la synchronisation MyDuty.",
+        "data": {
+          "name": "Nom",
+          "share_id": "Identifiant de partage"
+        }
+      }
+    },
+    "error": {
+      "invalid_share_id": "Identifiant de partage invalide.",
+      "invalid_user_id": "Identifiant de partage invalide."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Horaires de synchronisation",
+        "description": "Configurez jusqu'à 3 horaires de synchronisation quotidienne (format HH:MM).",
+        "data": {
+          "sync_time_1": "Premier horaire (HH:MM)",
+          "sync_time_2": "Deuxième horaire (HH:MM)",
+          "sync_time_3": "Troisième horaire (HH:MM)"
+        }
+      }
+    },
+    "error": {
+      "invalid_format": "Format invalide. Utilisez HH:MM (ex: 09:30)",
+      "at_least_one_time": "Veuillez saisir au moins un horaire de synchronisation"
+    }
+  }
+}
