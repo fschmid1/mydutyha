@@ -1,6 +1,7 @@
 from homeassistant import config_entries
 from homeassistant.core import callback
 from .const import DOMAIN
+import re
 import voluptuous as vol
 from .api import MyDutyApi
 
@@ -63,7 +64,7 @@ class MyDutyOptionsFlowHandler(config_entries.OptionsFlow):
                 time_value = user_input.get(f"sync_time_{i}", "").strip()
                 if time_value:
                     # Validate HH:MM format
-                    if not vol.Match(r"^([0-1][0-9]|2[0-3]):[0-5][0-9]$")(time_value):
+                    if not re.match(r"^([0-1][0-9]|2[0-3]):[0-5][0-9]$", time_value):
                         errors[f"sync_time_{i}"] = "invalid_format"
                     else:
                         times.append(time_value)

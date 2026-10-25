@@ -1,9 +1,9 @@
 sync_now:
   description: "Force MyDuty sync for user(s)"
   fields:
-    user_id:
-      description: "User ID to sync (optional, all if omitted)"
-      example: "123456798456132456"
+    share_id:
+      description: "Share ID to sync (optional, all if omitted)"
+      example: "7169199277729942"
       required: false
       selector:
         text:
